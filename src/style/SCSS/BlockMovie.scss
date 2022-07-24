@@ -1,0 +1,40 @@
+@import "AbsoluteStyle.scss";
+
+@mixin flex-patern($Justy, $Align, $Direction) {
+  display: flex;
+  justify-content: $Justy;
+  align-items: $Align;
+  flex-direction: $Direction;
+}
+
+.BlockMovie {
+  @include flex-patern(center, center, none);
+  width: 100%;
+
+  div {
+    margin-right: 40px;
+  }
+}
+
+.BlockMovieWrapper {
+  @include flex-patern(center, center, none);
+  width: $widthWrapperApp;
+  flex-wrap: wrap;
+  background-color: #181915;
+  padding: 37px;
+
+  div {
+    @include flex-patern(center, center, column);
+
+    h1,
+    h3 {
+      color: white;
+      font-size: 20px;
+    }
+  }
+
+  img {
+    height: 300px;
+    width: 200px;
+  }
+}

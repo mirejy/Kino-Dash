@@ -1,0 +1,134 @@
+.slider {
+  width: 800px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.Slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topFilm {
+  width: 820px;
+  height: 500px;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 800px;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.slide img {
+  width: 800px;
+  height: 500px;
+}
+
+.navigator-manual {
+  position: absolute;
+  width: 800px;
+  margin: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #c4c4c4;
+  padding: 5px;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 10px;
+  margin-top: 420px;
+  margin-right: 81px;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: black;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0px;
+  background: black;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -100%;
+  background: black;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -200%;
+  background: black;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -300%;
+  background: black;
+}
+
+.navigator-auto {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 460px;
+}
+
+.navigator-auto div {
+  border: 2px solid #c4c4c4;
+  padding: 5px;
+  border-radius: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.navigator-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigator-auto .autobtn1 {
+  background: black;
+}
+
+#radio2:checked ~ .navigator-auto .autobtn2 {
+  background: black;
+}
+
+#radio3:checked ~ .navigator-auto .autobtn3 {
+  background: black;
+}
+
+#radio4:checked ~ .navigator-auto .autobtn4 {
+  background: black;
+}
