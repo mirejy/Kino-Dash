@@ -13,15 +13,15 @@ function Header() {
         </div>
         <div className="Re-link">
           <div className="Re-linkWrapper">
-            <Link to={"/"} className="link" href="/">
+            <a className="link" href="/">
               Сериалы
-            </Link>
-            <Link to={"/"} className="link" href="/">
+            </a>
+            <a className="link" href="/">
               Топ 100
-            </Link>
-            <Link to={"/"} className="link" href="/">
+            </a>
+            <a className="link" href="/">
               Новинки
-            </Link>
+            </a>
           </div>
         </div>
       </header>

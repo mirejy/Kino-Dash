@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
 import Header from "./Header/Header";
-import NavBar from "./NavBar/NavBar";
-import Slider from "./Slider/Slider.js";
-import BlockMovie from "./BlockMovie/BlockMovie.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import MoviePage from "../pages/MoviePage";
+import MainPage from "../pages/MainPage";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -12,13 +12,11 @@ function App() {
       <Header />
       <Router>
         <Routes>
-          <Route path="/">
-            <NavBar />
-            <Slider />
-            <BlockMovie />
-          </Route>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/movie" element={<MoviePage />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.FooterWrapper {
+  height: 61px;
+  align-items: center;
+  justify-content: start;
+  display: flex;
+  width: 93%;
+}
+
+.Footer {
+  background-color: #2f2e2e;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+}
