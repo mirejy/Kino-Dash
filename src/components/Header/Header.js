@@ -9,19 +9,21 @@ function Header() {
       <header className="HeaderWrapper">
         <div className="HeaderLogo">
           <img className="LogoImg" src={img} alt="sorry" />
-          <h1 className="Logo">KinoDash</h1>
+          <Link to="/">
+            <h1 className="Logo">KinoDash</h1>
+          </Link>
         </div>
         <div className="Re-link">
           <div className="Re-linkWrapper">
-            <a className="link" href="/">
+            <Link to="/movie" className="link">
               Сериалы
-            </a>
-            <a className="link" href="/">
+            </Link>
+            <Link to="/movie" className="link" href="/">
               Топ 100
-            </a>
-            <a className="link" href="/">
+            </Link>
+            <Link to="/movie" className="link" href="/">
               Новинки
-            </a>
+            </Link>
           </div>
         </div>
       </header>

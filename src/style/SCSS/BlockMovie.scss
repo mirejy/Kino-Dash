@@ -1,5 +1,3 @@
-@import "AbsoluteStyle.scss";
-
 @mixin flex-patern($Justy, $Align, $Direction) {
   display: flex;
   justify-content: $Justy;
@@ -18,13 +16,14 @@
 
 .BlockMovieWrapper {
   @include flex-patern(center, center, none);
-  width: $widthWrapperApp;
+  width: 87%;
   flex-wrap: wrap;
   background-color: #181915;
   padding: 37px;
 
   div {
     @include flex-patern(center, center, column);
+    max-width: 200px;
 
     h1,
     h3 {

@@ -9,10 +9,10 @@ import Footer from "./Footer/Footer";
 function App() {
   return (
     <div className="App">
-      <Header />
       <Router>
+        <Header />
         <Routes>
-          <Route path="/" element={<MainPage />} />
+          <Route path="/" exact={true} element={<MainPage />} />
           <Route path="/movie" element={<MoviePage />} />
         </Routes>
       </Router>

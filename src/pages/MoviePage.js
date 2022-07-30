@@ -1,6 +1,6 @@
 import React from "react";
 
-function MoviePage() {
+function MoviePage(props) {
   return (
     <div className="MoviePage">
       <div className="MoviePageWrapper">
@@ -8,6 +8,7 @@ function MoviePage() {
         <h2>sdfdagd</h2>
         <h3>sdfadg</h3>
         <h4>sdfadgad</h4>
+        {console.log(props)}
       </div>
     </div>
   );
