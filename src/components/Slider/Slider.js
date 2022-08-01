@@ -1,23 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../style/CSS/Slider.css";
 import FirstImgSlider from "../../images/FirstImgSlider.jpg";
 import SecondImgSlider from "../../images/SecondImgSlider.jpg";
 import ThreeImgSlider from "../../images/ThreeImgSlider.jpg";
 import ForImgSlider from "../../images/ForImgSlider.jpg";
 
-var counter = 1;
-
-setInterval(function () {
-  document.querySelector("#radio" + counter).checked = true;
-
-  counter++;
-
-  if (counter > 4) {
-    counter = 1;
-  }
-}, 3000);
-
 function Slider() {
+  var counter = 1;
+
+  setInterval(function () {
+    document.querySelector("#radio" + counter).checked = true;
+
+    counter++;
+
+    if (counter > 4) {
+      counter = 1;
+    }
+  }, 2500);
+
   return (
     <div className="Slider">
       <div className="slider">

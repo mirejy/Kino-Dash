@@ -15,8 +15,8 @@ function App() {
           <Route path="/" exact={true} element={<MainPage />} />
           <Route path="/movie" element={<MoviePage />} />
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }

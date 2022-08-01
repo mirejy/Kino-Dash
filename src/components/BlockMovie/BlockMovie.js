@@ -17,7 +17,6 @@ function BlockMovie() {
       } catch (error) {
         console.log(error);
       }
-      // setPost(date);
     };
 
     fetchPost();
@@ -29,10 +28,17 @@ function BlockMovie() {
         <p>{loading && "Загрузка"}</p>
         {post.map((item) => (
           <Link
-            to={{
-              pathname: "/movie",
-              state: "tdrue",
-            }} 
+            to="/movie"
+            state={{
+              title: item.title,
+              genres: item.genres,
+              year: item.year,
+              runtime: item.runtime,
+              description_full: item.description_full,
+              medium_cover_image: item.medium_cover_image,
+              rating: item.rating,
+              torrents: item.torrents[0].url,
+            }}
           >
             <div key={item.id}>
               <img
