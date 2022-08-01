@@ -38,6 +38,7 @@ function BlockMovie() {
               medium_cover_image: item.medium_cover_image,
               rating: item.rating,
               torrents: item.torrents[0].url,
+              url: item.url,
             }}
           >
             <div key={item.id}>

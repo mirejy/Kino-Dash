@@ -15,13 +15,7 @@ function Header() {
         </div>
         <div className="Re-link">
           <div className="Re-linkWrapper">
-            <Link
-              to={{
-                pathname: "/movie",
-                state: "tdrue",
-              }}
-              className="link"
-            >
+            <Link to="/movie" className="link">
               Сериалы
             </Link>
             <Link to="/movie" className="link" href="/">

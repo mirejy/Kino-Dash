@@ -15,10 +15,9 @@
 
 .BlockDescriptionMovie {
   display: flex;
-  height: 52%;
   width: 97%;
   align-items: center;
-  height: 59%;
+  height: 67%;
 }
 
 .imgMovie {
@@ -41,20 +40,28 @@
   width: 91%;
 }
 
-.buttonDownload {
+@mixin button-styles($Background, $Hover, $Active) {
   width: 157px;
   height: 33px;
-  background: #59a559;
+  background: $Background;
   border-radius: 4px;
   border: none;
   color: white;
   margin-top: 12px;
 
   &:hover {
-    background-color: #44c944;
+    background-color: $Hover;
   }
 
   &:active {
-    background-color: orange;
+    background-color: $Active;
   }
+}
+
+.buttonDownload {
+  @include button-styles(#59a559, #44c944, orange);
+}
+
+.buttonLink {
+  @include button-styles(rgb(22, 86, 168), rgb(94, 94, 238), orange);
 }

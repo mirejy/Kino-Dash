@@ -6,9 +6,7 @@ import { useLocation } from "react-router-dom";
 function MoviePage() {
   const Location = useLocation();
   const DateLocation = Location.state;
-  console.log(DateLocation.state);
   const description = DateLocation.description_full;
-  console.log(DateLocation);
 
   return (
     <div className="MoviePage">
@@ -23,6 +21,9 @@ function MoviePage() {
             <h3>Рейтинг: {DateLocation.rating}</h3>
             <a href={DateLocation.torrents}>
               <button className="buttonDownload">Download</button>
+            </a>
+            <a href={DateLocation.url}>
+              <button className="buttonLink">Watch now</button>
             </a>
           </div>
           <div className="BlockAboutMovie">
