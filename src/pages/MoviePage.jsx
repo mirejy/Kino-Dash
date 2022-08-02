@@ -45,8 +45,4 @@ function MoviePage() {
   );
 }
 
-{
-  /*/MoviePage.css <h1>{DateLocation.state.title}</h1> */
-}
-
 export default MoviePage;
