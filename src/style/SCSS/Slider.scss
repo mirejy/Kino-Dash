@@ -1,3 +1,5 @@
+@import "./BlockMovie.scss";
+
 .slider {
   width: 800px;
   height: 500px;
@@ -5,9 +7,7 @@
 }
 
 .Slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-patern(center, center, none);
 }
 
 .slides {
@@ -34,11 +34,10 @@
 }
 
 .navigator-manual {
+  @include flex-patern(center, none, none);
   position: absolute;
   width: 800px;
   margin: 40px;
-  display: flex;
-  justify-content: center;
 }
 
 .manual-btn {
@@ -80,10 +79,9 @@
 }
 
 .navigator-auto {
+  @include flex-patern(center, none, none);
   position: absolute;
-  display: flex;
   width: 800px;
-  justify-content: center;
   margin-top: 460px;
 }
 

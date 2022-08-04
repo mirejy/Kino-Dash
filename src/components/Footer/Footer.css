@@ -1,7 +1,7 @@
 .FooterWrapper {
   height: 61px;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   display: flex;
   width: 93%;
 }

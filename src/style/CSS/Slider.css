@@ -1,3 +1,69 @@
+.BlockMovie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  width: 100%;
+}
+.BlockMovie div {
+  margin-right: 40px;
+}
+
+.BlockMovieWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  width: 87%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #181915;
+  padding: 37px;
+}
+.BlockMovieWrapper div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 200px;
+}
+.BlockMovieWrapper div h1,
+.BlockMovieWrapper div h3 {
+  color: white;
+  font-size: 20px;
+}
+.BlockMovieWrapper img {
+  height: 300px;
+  width: 200px;
+}
+
 .slider {
   width: 800px;
   height: 500px;
@@ -14,6 +80,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
 }
 
 .slides {
@@ -43,15 +113,22 @@
 }
 
 .navigator-manual {
-  position: absolute;
-  width: 800px;
-  margin: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  position: absolute;
+  width: 800px;
+  margin: 40px;
 }
 
 .manual-btn {
@@ -94,14 +171,21 @@
 }
 
 .navigator-auto {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 800px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  position: absolute;
+  width: 800px;
   margin-top: 460px;
 }
 

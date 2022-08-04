@@ -13,6 +13,9 @@ function Header() {
             <h1 className="Logo">KinoDash</h1>
           </Link>
         </div>
+        <div>
+          <input type="text" name="inp" id="inp" />
+        </div>
         <div className="Re-link">
           <div className="Re-linkWrapper">
             <Link to="/movie" className="link">
