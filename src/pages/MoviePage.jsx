@@ -35,7 +35,7 @@ function MoviePage() {
                 <h3>Продолжительность: {DateLocation.runtime}мин</h3>
               </div>
               <div>
-                <h3>{description.slice(0, 600)}</h3>
+                <h3>{description.slice(0, 400)}</h3>
               </div>
             </div>
           </div>

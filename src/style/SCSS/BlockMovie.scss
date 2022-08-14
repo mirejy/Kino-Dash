@@ -6,17 +6,13 @@
 }
 
 .BlockMovie {
-  @include flex-patern(center, center, none);
+  @include flex-patern(center, center, column);
   width: 100%;
-
-  div {
-    margin-right: 40px;
-  }
 }
 
 .BlockMovieWrapper {
   @include flex-patern(center, center, none);
-  width: 87%;
+  width: 63.4%;
   flex-wrap: wrap;
   background-color: #181915;
   padding: 37px;
@@ -24,6 +20,8 @@
   div {
     @include flex-patern(center, center, column);
     max-width: 200px;
+    margin-bottom: 20px;
+    margin-right: 48px;
 
     h1,
     h3 {
@@ -36,4 +34,10 @@
     height: 300px;
     width: 200px;
   }
+}
+
+.Loading {
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }

@@ -14,9 +14,6 @@
           flex-direction: none;
   width: 100%;
 }
-.BlockMovie div {
-  margin-right: 40px;
-}
 
 .BlockMovieWrapper {
   display: -webkit-box;
@@ -32,7 +29,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: none;
           flex-direction: none;
-  width: 87%;
+  width: 63.4%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #181915;
@@ -53,6 +50,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 200px;
+  margin-bottom: 20px;
+  margin-right: 48px;
 }
 .BlockMovieWrapper div h1,
 .BlockMovieWrapper div h3 {
@@ -62,4 +61,8 @@
 .BlockMovieWrapper img {
   height: 300px;
   width: 200px;
+}
+
+.Loading {
+  color: white;
 }
