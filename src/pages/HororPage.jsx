@@ -21,10 +21,10 @@ export default function HororPage() {
   console.log(finalmovies);
 
   return (
-    <div className="SearchMovie">
+    <div className="HorrorMovie">
       <h1>Ужасы</h1>
-      <div className="SearchMovieWrapper">
-        <div className="SearchWrapper">
+      <div className="HorrorMovieWrapper">
+        <div className="HorrorWrapper">
           <div>
             {finalmovies.map((item) => (
               <Link
