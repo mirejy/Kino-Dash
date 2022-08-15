@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../style/CSS/BlockMovie.css";
 import { useDispatch, useSelector } from "react-redux";
@@ -11,7 +11,7 @@ function BlockMovie() {
 
   useEffect(() => {
     getAllMovies({ dispatch });
-  }, []);
+  });
 
   const SortingByYears = movies.sort(function (a, b) {
     if (a.year < b.year) {
