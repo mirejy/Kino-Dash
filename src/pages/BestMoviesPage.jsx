@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../style/CSS/BlockMovie.css";
 import { useDispatch, useSelector } from "react-redux";
@@ -6,12 +6,12 @@ import { getAllMovies } from "../redux/servises/getAllMovies";
 
 export default function BestMovies() {
   const dispatch = useDispatch();
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
   const { movies } = useSelector((state) => state);
 
   useEffect(() => {
     getAllMovies({ dispatch });
-    setLoading(false);
+    // setLoading(false);
   }, []);
 
   const finalmovies = movies.sort(function (a, b) {
@@ -22,11 +22,9 @@ export default function BestMovies() {
     }
   });
 
-  console.log(finalmovies);
-
   return (
     <div className="BlockMovie">
-      <h1 className="Loading">Лучшее</h1>
+      <h1>Лучшее</h1>
       <div className="BlockMovieWrapper">
         {finalmovies.map((item) => (
           <Link

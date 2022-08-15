@@ -6,7 +6,6 @@ import { useLocation } from "react-router-dom";
 function MoviePage() {
   const Location = useLocation();
   const DateLocation = Location.state;
-  const description = DateLocation.description_full;
 
   return (
     <div className="MoviePage">
@@ -35,7 +34,7 @@ function MoviePage() {
                 <h3>Продолжительность: {DateLocation.runtime}мин</h3>
               </div>
               <div>
-                <h3>{description.slice(0, 400)}</h3>
+                <h3>{DateLocation.description_full.slice(0, 400)}</h3>
               </div>
             </div>
           </div>

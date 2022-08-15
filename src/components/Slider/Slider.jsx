@@ -3,7 +3,6 @@ import "../../style/CSS/Slider.css";
 import FirstImgSlider from "../../images/FirstImgSlider.jpg";
 import SecondImgSlider from "../../images/SecondImgSlider.jpg";
 import ThreeImgSlider from "../../images/ThreeImgSlider.jpg";
-import ForImgSlider from "../../images/ForImgSlider.jpg";
 
 function Slider() {
   var counter = 1;
@@ -40,7 +39,7 @@ function Slider() {
           </div>
 
           <div className="slide">
-            <img src={ForImgSlider} className="topFilm" alt="" />
+            <img src={SecondImgSlider} className="topFilm" alt="" />
           </div>
 
           <div className="navigator-auto">

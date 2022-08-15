@@ -5,3 +5,20 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+nav {
+  width: 17%;
+  height: auto;
+  margin-top: 528px;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 21px;
+  background-color: white;
+}
+
+.active {
+  color: green;
+}

@@ -45,10 +45,6 @@
   &:hover {
     color: gray;
   }
-
-  &:active {
-    color: orange;
-  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -67,4 +63,15 @@
 
 #inp {
   width: 140%;
+}
+
+.PopUpInput {
+  position: absolute;
+  z-index: 90;
+  background-color: white;
+  width: 220px;
+}
+
+.prime {
+  color: red;
 }

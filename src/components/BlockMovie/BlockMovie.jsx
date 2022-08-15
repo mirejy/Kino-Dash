@@ -23,7 +23,7 @@ function BlockMovie() {
 
   return (
     <div className="BlockMovie">
-      <h1 className="Loading">Новинки</h1>
+      <h1>Новинки</h1>
       <div className="BlockMovieWrapper">
         {SortingByYears.map((item) => (
           <Link
