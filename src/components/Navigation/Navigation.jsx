@@ -6,23 +6,17 @@ export function Navigation() {
   return (
     <div className="Navigation">
       <nav>
-        <NavLink to="/" exact>
+        <NavLink to="/" exact={true}>
           home
-        </NavLink>
-        <NavLink to="/BestMovies" exact>
-          Новинки
         </NavLink>
         <NavLink to="/BestMovies" exact>
           Лучшее Фильмы
         </NavLink>
-        <NavLink to="/BestMovies" exact>
-          Сериалы
-        </NavLink>
-        <NavLink to="/BestMovies" exact>
-          Ужасы
-        </NavLink>
-        <NavLink to="/BestMovies" exact>
+        <NavLink to="/Drama" exact>
           Драмы
+        </NavLink>
+        <NavLink to="/Horor" exact>
+          Ужасы
         </NavLink>
         <NavLink to="/BestMovies" exact>
           Коммедии
