@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "../../style/CSS/Header.css";
-import img from "../../images/images.png";
+import imgLogo from "../../images/images.png";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { getAllMovies } from "../../redux/servises/getAllMovies";
+import { Navigation } from "../../components/Navigation/Navigation.jsx";
+import burger from "../../images/burgerPopUp.png";
 
 function Header() {
   const [popUp, setPopUp] = useState();
+  const [activeModal, setModalActive] = useState(false);
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const dispatch = useDispatch();
@@ -64,33 +67,25 @@ function Header() {
     <div className="Header">
       <header className="HeaderWrapper">
         <div className="HeaderLogo">
-          <img className="LogoImg" src={img} alt="sorry" />
+          <img className="LogoImg" src={imgLogo} alt="sorry" />
           <Link to="/">
             <h1 className="Logo">KinoDash</h1>
           </Link>
         </div>
         <form onSubmit={handleSubmit}>
           <input
+            className="inputSearch"
             type="text"
             value={name}
             onChange={(e) => HandlerChange(e.target.value)}
           />
-          <input type="submit" />
+          <input className="buttonSubmit" type="submit" />
           {popUp}
         </form>
-        <div className="Re-link">
-          <div className="Re-linkWrapper">
-            <Link to="/movie" className="link">
-              Сериалы
-            </Link>
-            <Link to="/BestMovies" className="link" href="/">
-              Лучшее
-            </Link>
-            <Link to="/movie" className="link" href="/">
-              Новинки
-            </Link>
-          </div>
-        </div>
+        <Navigation active={activeModal} setActive={setModalActive} />
+        <button className="butPopUp" onClick={() => setModalActive(true)}>
+          <img src={burger} className="burgerImg" alt="sorry" />
+        </button>
       </header>
     </div>
   );

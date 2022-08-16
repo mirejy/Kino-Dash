@@ -18,8 +18,6 @@ export default function Drama() {
     element.genres.includes("Drama")
   );
 
-  console.log(finalmovies);
-
   return (
     <div className="BlockMovie">
       <h1>Драмы</h1>

@@ -1,30 +1,26 @@
 import React from "react";
 import "../../style/CSS/Navigation.css";
 import { NavLink } from "react-router-dom";
+import burger from "../../images/burgerPopUp.png";
 
-export function Navigation() {
+export const Navigation = ({ active, setActive }) => {
   return (
     <div className="Navigation">
-      <nav>
-        <NavLink to="/" exact={true}>
+      <nav className={active === true ? "nav actives" : "nav"}>
+        <div className="wrapperButton">
+          <button className="butPopUp" onClick={() => setActive(false)}>
+            <img src={burger} className="burgerImg" alt="sorry" />
+          </button>
+        </div>
+        <NavLink to="/" exact="true">
           home
         </NavLink>
-        <NavLink to="/BestMovies" exact>
-          Лучшее Фильмы
-        </NavLink>
-        <NavLink to="/Drama" exact>
-          Драмы
-        </NavLink>
-        <NavLink to="/Horor" exact>
-          Ужасы
-        </NavLink>
-        <NavLink to="/BestMovies" exact>
-          Коммедии
-        </NavLink>
-        <NavLink to="/BestMovies" exact>
-          Боивики
-        </NavLink>
+        <NavLink to="/BestMovies">Лучшее Фильмы</NavLink>
+        <NavLink to="/Drama">Драмы</NavLink>
+        <NavLink to="/Horor">Ужасы</NavLink>
+        <NavLink to="/BestMovies">Коммедии</NavLink>
+        <NavLink to="/BestMovies">Боивики</NavLink>
       </nav>
     </div>
   );
-}
+};

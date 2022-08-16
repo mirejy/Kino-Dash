@@ -3,6 +3,7 @@
 .Header {
   @include flex-patern(center, none, none);
   background-color: white;
+  height: 43px;
 }
 
 .Logo {
@@ -61,10 +62,6 @@
   }
 }
 
-#inp {
-  width: 140%;
-}
-
 .PopUpInput {
   position: absolute;
   z-index: 90;
@@ -72,6 +69,25 @@
   width: 220px;
 }
 
-.prime {
-  color: red;
+.burgerImg {
+  width: 40px;
+}
+
+.inputSearch {
+  height: 26px;
+  width: 200px;
+}
+
+.buttonSubmit {
+  width: 80px;
+  height: 26px;
+  background: #3c3c3c;
+  color: white;
+}
+
+.butPopUp {
+  width: 53px;
+  background: white;
+  border: none;
+  margin-left: -3px;
 }

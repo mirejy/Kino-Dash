@@ -18,45 +18,39 @@ export default function HororPage() {
     element.genres.includes("Horror")
   );
 
-  console.log(finalmovies);
-
   return (
     <div className="HorrorMovie">
       <h1>Ужасы</h1>
       <div className="HorrorMovieWrapper">
-        <div className="HorrorWrapper">
-          <div>
-            {finalmovies.map((item) => (
-              <Link
-                key={item.id}
-                to="/movie"
-                state={{
-                  title: item.title,
-                  genres: item.genres,
-                  year: item.year,
-                  runtime: item.runtime,
-                  description_full: item.description_full,
-                  medium_cover_image: item.medium_cover_image,
-                  rating: item.rating,
-                  torrents: item.torrents[0].url,
-                  url: item.url,
-                }}
-              >
-                <div>
-                  <img
-                    src={item.medium_cover_image}
-                    alt="sorry we don't have"
-                  ></img>
-                  <h1>
-                    {item.title.length > 15
-                      ? `${item.title.slice(0, 15)}...`
-                      : item.title}
-                  </h1>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
+        {finalmovies.map((item) => (
+          <Link
+            key={item.id}
+            to="/movie"
+            state={{
+              title: item.title,
+              genres: item.genres,
+              year: item.year,
+              runtime: item.runtime,
+              description_full: item.description_full,
+              medium_cover_image: item.medium_cover_image,
+              rating: item.rating,
+              torrents: item.torrents[0].url,
+              url: item.url,
+            }}
+          >
+            <div>
+              <img
+                src={item.medium_cover_image}
+                alt="sorry we don't have"
+              ></img>
+              <h1>
+                {item.title.length > 15
+                  ? `${item.title.slice(0, 15)}...`
+                  : item.title}
+              </h1>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   );

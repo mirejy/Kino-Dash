@@ -74,6 +74,6 @@
 }
 
 .HorrorMovieWrapper {
-  @include defaultWrapper(100%, 100%, 0px, 0px);
+  @include defaultWrapper(100%, 100%, 0px, 16px);
   @include PatternPage();
 }

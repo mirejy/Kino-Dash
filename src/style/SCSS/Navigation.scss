@@ -1,0 +1,32 @@
+.nav {
+  display: none !important;
+  width: 17%;
+  height: auto;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 21px;
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.nav.actives {
+  display: block !important;
+  display: flex !important;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.active {
+  color: orange;
+}
+
+.HiddenLink {
+  display: none;
+}
